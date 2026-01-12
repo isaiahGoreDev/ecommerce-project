@@ -1,0 +1,25 @@
+@use "../../styles/_global" as *
+
+
+.button
+  position: relative
+  padding: 12px 22px
+  border-radius: 1000px
+  text-transform: capitalize
+  font-weight: 600
+  letter-spacing: -0.02em
+  cursor: pointer
+  font-size: 16.2px
+  @include componentTransition
+  &:hover
+    opacity: .6
+
+.primary
+  background: $black
+  color: #fff
+
+.secondary
+  background: #fff
+  color: $black
+  &:hover
+    opacity: .8

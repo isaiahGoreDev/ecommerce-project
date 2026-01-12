@@ -1,0 +1,86 @@
+@use "../../styles/_global" as *
+
+
+.card
+  flex-shrink: 0
+  width: 300px
+  height: auto
+  cursor: pointer
+  &-holder
+    position: relative
+    background: $grayPrimary
+    width: 100%
+    height: 380px
+    margin-bottom: .25rem
+    overflow: hidden
+    border-radius: 12px
+    z-index: 0
+  @include media-screen('min', $sm)
+    width: 380px
+    .card-holder
+      height: 440px
+  
+
+.product
+  &-image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+  &-actions
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+  &-icon
+    position: absolute
+    width: 30px 
+    height: 30px
+    border-radius: 100%
+    @include componentTransition
+    @include centerContent()
+    svg
+      width: 20px
+      height: 20px
+
+
+.favorite
+  position: absolute
+  top: 10px
+  right: 10px
+  &:hover
+    opacity: .5
+
+
+.add
+  overflow: hidden
+  bottom: 10px
+  right: 10px
+  svg
+    position: relative
+    z-index: 1
+  &-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: $gray300
+    z-index: 0
+    @include componentTransition
+  &:hover
+    .add-bg
+      background: $gray400
+
+.content
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-size: 12px
+  text-transform: uppercase
+  h3
+    letter-spacing: -0.02em

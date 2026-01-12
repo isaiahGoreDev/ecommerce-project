@@ -1,0 +1,96 @@
+#root {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #111;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+* {
+  box-sizing: border-box;
+}
+div,
+input {
+  box-sizing: border-box;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+textarea{
+  font-family: "Inter Tight", sans-serif;
+}
+input[type="radio"]{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto !important;
+  min-height: auto !important;
+  pointer-events: none;
+  visibility: hidden;
+}
+*:focus {
+  outline: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+body {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  overscroll-behavior: none;
+  font-synthesis: none;
+  color: #111;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-weight: normal;
+}
+
+span {
+  display: block;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* For Chrome, Edge, and Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+button{
+  border: none;
+  background: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}

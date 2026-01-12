@@ -1,0 +1,22 @@
+@use "../../../styles/_global" as *
+
+
+.feature
+  margin: 6vw 0
+  overflow: hidden
+  width: 100%
+
+.grid
+  display: flex
+  align-items: center
+  gap: 15px
+  flex-wrap: nowrap
+  overflow: scroll
+  padding: 0 20px 20px
+  scrollbar-width: none
+  -ms-overflow-style: none
+  &::-webkit-scrollbar
+    display: none
+  @include media-screen('min', $sm)
+    padding: 0 40px 20px
+  
